@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 02 - Sequência de Fibonacci</title>
+    <script>
+        let num = prompt('Insira um número:');
+        let a = 0;
+        let b = 1;
+
+        while (b < num) {
+        let temp = a + b;
+        a = b;
+        b = temp;
+        }
+
+        if (b === num) {
+        console.log(num + " pertence à sequência de Fibonacci");
+        } else {
+        console.log(num + " não pertence à sequência de Fibonacci");
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
